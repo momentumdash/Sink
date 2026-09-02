@@ -47,3 +47,5 @@ jobs:
           DEPLOY_D1_DATABASE_ID: ${{ vars.DEPLOY_D1_DATABASE_ID || secrets.DEPLOY_D1_DATABASE_ID }}
           DEPLOY_KV_NAMESPACE_ID: ${{ vars.DEPLOY_KV_NAMESPACE_ID || secrets.DEPLOY_KV_NAMESPACE_ID }}
           DEPLOY_D1_DATABASE_NAME: ${{ vars.DEPLOY_D1_DATABASE_NAME || 'sink' }}
+          # Optional. Set to an existing R2 bucket name to enable daily link backups.
+          DEPLOY_R2_BUCKET_NAME: ${{ vars.DEPLOY_R2_BUCKET_NAME }}
