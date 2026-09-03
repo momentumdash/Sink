@@ -10,7 +10,7 @@ description: Sink 支持的全部环境变量——做什么、填在哪、什�
 **大多数人需要的**
 
 - 必配：`NUXT_SITE_TOKEN`、D1（`DB`）、KV（`KV`）以及它们的 ID
-- 访问分析：`ANALYTICS` 绑定 + `NUXT_CF_ACCOUNT_ID` + `NUXT_CF_ANALYTICS_API_TOKEN` — 见[访问分析](/zh-CN/features/analytics)
+- 访问分析：`ANALYTICS` 绑定 + `NUXT_CF_ACCOUNT_ID` + `NUXT_CF_API_TOKEN` — 见[访问分析](/zh-CN/features/analytics)
 - 其余都是可选
 
 ## 变量填在哪里
@@ -63,7 +63,7 @@ description: Sink 支持的全部环境变量——做什么、填在哪、什�
 | 变量                 | 时机           | 放哪里               | 用途                                                        |
 | -------------------- | -------------- | -------------------- | ----------------------------------------------------------- |
 | `NUXT_CF_ACCOUNT_ID` | 运行时         | Worker 或 Pages 变量 | 你的 Cloudflare 账户 ID                                     |
-| `NUXT_CF_ANALYTICS_API_TOKEN`  | 运行时（密钥） | 加密密钥             | 仅含 **Account → Account Analytics → Read** 的 Custom Token |
+| `NUXT_CF_API_TOKEN`  | 运行时（密钥） | 加密密钥             | 仅含 **Account → Account Analytics → Read** 的 Custom Token |
 
 同时绑定 `ANALYTICS`。备份加 `R2`，AI 加 `AI`。令牌步骤见[访问分析](/zh-CN/features/analytics)。
 

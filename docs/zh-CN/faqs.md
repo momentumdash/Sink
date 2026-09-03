@@ -35,7 +35,7 @@ description: 解决常见的部署、登录、访问分析、重定向、导入�
 1. Analytics Engine 已绑定为 `ANALYTICS`
 2. 数据集名称一致（默认 `sink`，或与 `NUXT_DATASET` 相同）
 3. `NUXT_CF_ACCOUNT_ID` 是承载本应用的账户
-4. `NUXT_CF_ANALYTICS_API_TOKEN` 是仅含 **Account → Account Analytics → Read** 的 Custom Token
+4. `NUXT_CF_API_TOKEN` 是仅含 **Account → Account Analytics → Read** 的 Custom Token
 5. 机器人过滤或仪表盘筛选没有把流量藏起来
 
 完整步骤见[访问分析](/zh-CN/features/analytics)。

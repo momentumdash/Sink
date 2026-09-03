@@ -20,7 +20,7 @@ You need all three:
 2. **Account ID** — set `NUXT_CF_ACCOUNT_ID` to the Cloudflare account that hosts this app  
    (Dashboard sidebar → account name, or the URL after you log in)
 
-3. **API token** — set `NUXT_CF_ANALYTICS_API_TOKEN` as an encrypted secret:
+3. **API token** — set `NUXT_CF_API_TOKEN` as an encrypted secret:
    - Cloudflare dashboard → profile icon → **My Profile** → **API Tokens** → **Create Token** → **Custom Token**
    - Permission: **Account → Account Analytics → Read** only
    - Prefer limiting the token to that same account

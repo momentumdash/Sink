@@ -2,8 +2,8 @@ import type { H3Event } from 'h3'
 import type { Compilable } from 'kysely'
 
 export function useWAE(event: H3Event, query: Compilable) {
-  const { cfAccountId, cfAnalyticsApiToken } = useRuntimeConfig(event)
-  if (!cfAccountId || !cfAnalyticsApiToken)
+  const { cfAccountId, cfApiToken } = useRuntimeConfig(event)
+  if (!cfAccountId || !cfApiToken)
     return { data: [] }
 
   const compiledQuery = compileAnalyticsQuery(query)
@@ -14,7 +14,7 @@ export function useWAE(event: H3Event, query: Compilable) {
   return $fetch(`https://api.cloudflare.com/client/v4/accounts/${cfAccountId}/analytics_engine/sql`, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${cfAnalyticsApiToken}`,
+      Authorization: `Bearer ${cfApiToken}`,
     },
     body: compiledQuery,
     retry: 1,

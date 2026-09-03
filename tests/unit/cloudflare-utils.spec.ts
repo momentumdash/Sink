@@ -30,8 +30,8 @@ describe('writeAccessLog', () => {
 
 describe('useWAE', () => {
   it.each([
-    { cfAccountId: '', cfAnalyticsApiToken: 'token' },
-    { cfAccountId: 'account', cfAnalyticsApiToken: '' },
+    { cfAccountId: '', cfApiToken: 'token' },
+    { cfAccountId: 'account', cfApiToken: '' },
   ])('returns empty data without requesting when credentials are incomplete', (config) => {
     const fetchMock = vi.fn()
     vi.stubGlobal('useRuntimeConfig', () => config)
@@ -46,7 +46,7 @@ describe('useWAE', () => {
     const fetchMock = vi.fn().mockRejectedValue(error)
     vi.stubGlobal('useRuntimeConfig', () => ({
       cfAccountId: 'account',
-      cfAnalyticsApiToken: 'token',
+      cfApiToken: 'token',
     }))
     vi.stubGlobal('compileAnalyticsQuery', () => 'select * from sink')
     vi.stubGlobal('$fetch', fetchMock)

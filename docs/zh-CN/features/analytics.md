@@ -20,7 +20,7 @@ description: 启用访问分析、查看图表和日志、了解近实时视图�
 2. **账户 ID** — 把 `NUXT_CF_ACCOUNT_ID` 设为承载本应用的 Cloudflare 账户 ID  
    （仪表盘侧边栏账户名，或登录后 URL 里可见）
 
-3. **API 令牌** — 把 `NUXT_CF_ANALYTICS_API_TOKEN` 设为加密密钥：
+3. **API 令牌** — 把 `NUXT_CF_API_TOKEN` 设为加密密钥：
    - Cloudflare 仪表盘 → 右上角头像 → **My Profile** → **API Tokens** → **Create Token** → **Custom Token**
    - 权限仅需：**Account → Account Analytics → Read**
    - 建议限制到同一账户

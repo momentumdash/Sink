@@ -51,7 +51,7 @@ description: 通过 Git 集成将 Sink 部署到 Cloudflare Workers。
 | -------------------- | -------- | ---------------------------------------------------- |
 | `NUXT_SITE_TOKEN`    | 加密密钥 | 仪表盘登录密码和 API 密码（至少 8 个字符，保持稳定） |
 | `NUXT_CF_ACCOUNT_ID` | 变量     | 访问分析推荐                                         |
-| `NUXT_CF_ANALYTICS_API_TOKEN`  | 加密密钥 | 访问分析推荐                                         |
+| `NUXT_CF_API_TOKEN`  | 加密密钥 | 访问分析推荐                                         |
 
 访问分析细节见[访问分析与近实时视图](/zh-CN/features/analytics)。完整列表见[配置参考](/zh-CN/configuration/)。
 
