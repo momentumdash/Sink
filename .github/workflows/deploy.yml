@@ -1,4 +1,4 @@
-# Deploys Sink to Cloudflare Workers on every push to master.
+# Deploys Sink to Cloudflare Workers on every push to main.
 #
 # The Cloudflare token lives only in this repo's GitHub Actions secrets. It never
 # touches a developer machine. The account and resource IDs may be stored as either
@@ -7,7 +7,7 @@ name: Deploy
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
