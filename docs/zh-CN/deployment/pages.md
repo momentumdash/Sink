@@ -65,7 +65,7 @@ description: 通过 Git 集成和仪表盘管理的绑定将 Sink 部署到 Clou
 | -------------------------- | -------- | ----------------------------------------------------------- |
 | `NUXT_SITE_TOKEN`          | 加密密钥 | 仪表盘登录密码和 API 密码（高强度、稳定，至少 8 个字符）    |
 | `NUXT_CF_ACCOUNT_ID`       | 变量     | Cloudflare 账户 ID（访问分析用）                            |
-| `NUXT_CF_API_TOKEN`        | 加密密钥 | 仅含 **Account → Account Analytics → Read** 的 Custom Token |
+| `NUXT_CF_ANALYTICS_API_TOKEN`        | 加密密钥 | 仅含 **Account → Account Analytics → Read** 的 Custom Token |
 
 创建访问分析令牌：Cloudflare 仪表盘 → 右上角头像 → **My Profile** → **API Tokens** → **Create Token** → **Custom Token** → 权限选 **Account → Account Analytics → Read**。
 

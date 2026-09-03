@@ -10,7 +10,7 @@ All values are strings. Boolean switches use `true` unless noted.
 **What most people need**
 
 - Always: `NUXT_SITE_TOKEN`, D1 (`DB`), KV (`KV`), and their IDs
-- For analytics: `ANALYTICS` binding + `NUXT_CF_ACCOUNT_ID` + `NUXT_CF_API_TOKEN` — see [Analytics](/features/analytics)
+- For analytics: `ANALYTICS` binding + `NUXT_CF_ACCOUNT_ID` + `NUXT_CF_ANALYTICS_API_TOKEN` — see [Analytics](/features/analytics)
 - Everything else is optional
 
 ## Where to put variables
@@ -63,7 +63,7 @@ If you leave it empty, Sink may invent a random password at build time that can 
 | Variable             | When             | Where                    | Purpose                                                       |
 | -------------------- | ---------------- | ------------------------ | ------------------------------------------------------------- |
 | `NUXT_CF_ACCOUNT_ID` | Runtime          | Worker or Pages variable | Your Cloudflare account ID                                    |
-| `NUXT_CF_API_TOKEN`  | Runtime (secret) | Encrypted secret         | Custom Token with **Account → Account Analytics → Read** only |
+| `NUXT_CF_ANALYTICS_API_TOKEN`  | Runtime (secret) | Encrypted secret         | Custom Token with **Account → Account Analytics → Read** only |
 
 Also bind `ANALYTICS`. Add `R2` for [backups](/features/backups), `AI` for [Workers AI](/features/ai). Token steps: [Analytics](/features/analytics).
 

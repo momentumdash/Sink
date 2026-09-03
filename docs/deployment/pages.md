@@ -65,7 +65,7 @@ Add runtime configuration separately in the same dashboard section:
 | -------------------------- | ---------------- | --------------------------------------------------------------------- |
 | `NUXT_SITE_TOKEN`          | Encrypted secret | Dashboard login password and API password (strong, stable, ≥ 8 chars) |
 | `NUXT_CF_ACCOUNT_ID`       | Variable         | Cloudflare account ID (for analytics)                                 |
-| `NUXT_CF_API_TOKEN`        | Encrypted secret | Custom Token with **Account → Account Analytics → Read** only         |
+| `NUXT_CF_ANALYTICS_API_TOKEN`        | Encrypted secret | Custom Token with **Account → Account Analytics → Read** only         |
 
 How to create the analytics token: Cloudflare dashboard → profile icon → **My Profile** → **API Tokens** → **Create Token** → **Custom Token** → permission **Account → Account Analytics → Read**.
 

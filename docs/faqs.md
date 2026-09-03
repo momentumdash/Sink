@@ -35,7 +35,7 @@ Check all of these:
 1. Analytics Engine is bound as `ANALYTICS`
 2. Dataset name matches (`sink` by default, or the same as `NUXT_DATASET`)
 3. `NUXT_CF_ACCOUNT_ID` is the account that hosts this app
-4. `NUXT_CF_API_TOKEN` is a Custom Token with **Account → Account Analytics → Read**
+4. `NUXT_CF_ANALYTICS_API_TOKEN` is a Custom Token with **Account → Account Analytics → Read**
 5. Bot filtering or dashboard filters are not hiding the traffic
 
 Full steps: [Analytics](/features/analytics).

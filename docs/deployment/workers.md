@@ -51,7 +51,7 @@ Under **Settings → Variables and Secrets**, add:
 | -------------------- | ---------------- | --------------------------------------------------------------------------------- |
 | `NUXT_SITE_TOKEN`    | Encrypted secret | Dashboard login password and API password (at least 8 characters, keep it stable) |
 | `NUXT_CF_ACCOUNT_ID` | Variable         | Recommended for analytics                                                         |
-| `NUXT_CF_API_TOKEN`  | Encrypted secret | Recommended for analytics                                                         |
+| `NUXT_CF_ANALYTICS_API_TOKEN`  | Encrypted secret | Recommended for analytics                                                         |
 
 Analytics details: [Analytics and Realtime](/features/analytics). Full list: [configuration](/configuration/).
 
