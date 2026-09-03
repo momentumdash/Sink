@@ -5,7 +5,12 @@
   "assets": {
     "binding": "ASSETS",
     "directory": ".output/public",
-    "html_handling": "drop-trailing-slash"
+    "html_handling": "drop-trailing-slash",
+    // Run the Worker before serving static assets for "/" only, so the
+    // homeURL redirect in server/middleware/1.redirect.ts fires instead of
+    // Cloudflare serving the prerendered marketing page. All other paths
+    // (assets, /_nuxt/*) are still served directly from the edge.
+    "run_worker_first": ["/"]
   },
   "compatibility_date": "2025-05-08",
   "compatibility_flags": [
